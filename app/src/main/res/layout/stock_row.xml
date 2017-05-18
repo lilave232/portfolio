@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AAPL"
+        android:id="@+id/symbol"
+        android:textSize="45dp"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="17dp"
+        android:text="100.00"
+        android:textColor="#000000"
+        android:id="@+id/currentprice"
+        android:paddingRight="5dp"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/currentprice"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/increasedecrease"
+        android:background="@drawable/up_triangle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="2dp"
+        android:textSize="17dp"
+        android:text="100.00"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/increasedecrease"
+        android:id="@+id/percentincrease" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10,000,000"
+        android:id="@+id/textView"
+        android:textSize="45dp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:text="100.00"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="100.00"
+        android:textColor="#000000"
+        android:id="@+id/textView3"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/increasedevalue" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/textView2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/increasedevalue"
+        android:background="@drawable/down_triangle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:text="100.00"
+        android:textColor="#000000"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/percentincrease"
+        />
+</RelativeLayout>

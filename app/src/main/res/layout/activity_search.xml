@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.APportfolio.Search"
+    android:layout_marginTop="10dp"
+    android:id="@+id/relative">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/linearLayout2">
+
+        <ImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_trending_up_black_24dp"
+            android:tint="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:id="@+id/stocks"/>
+
+        <ImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_view_headline_black_24dp"
+            android:tint="@color/colorAccent"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/news"/>
+        <ImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_search_black_24dp"
+            android:tint="@color/colorPrimaryDark"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@color/colorAccent"
+            android:id="@+id/search"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Symbol:"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="5dp"/>
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/ic_search_black_24dp"
+        android:background="@android:color/transparent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView10"
+        android:layout_toLeftOf="@id/imageButton"
+        android:id="@+id/linearLayout">
+        <AutoCompleteTextView
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textCapCharacters"
+            android:lines="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/textView12"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
